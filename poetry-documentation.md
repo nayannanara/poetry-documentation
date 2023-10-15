@@ -1,19 +1,38 @@
 # Utilizar poetry e pyenv para versionamento do Python e criação de ambiente virtual
 ### Instalação
-#### Poetry
+
+#### Poetry (Linux)
 
 Para instalar o [poetry](https://python-poetry.org/docs/), execute o seguinte comando:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
 ```
+#### Poetry (Mac OS)
 
-#### Pyenv
+Para instalar o [poetry](https://python-poetry.org/docs/) no Mac OS, execute o seguinte comando:
+
+```bash
+brew install pipx
+pipx ensurepath
+pipx install poetry
+```
+
+#### Pyenv (Linux)
 Para instalar o pyenv, siga o conteúdo deste [link](https://gist.github.com/trongnghia203/9cc8157acb1a9faad2de95c3175aa875). Não precisa instalar a parte do **pyenv-virtualenv**. Pois usaremos o poetry para criar um ambiente virtual. Enquanto, o pyenv será para a versão do Python que quisermos utilizar.
 
 *obs.: não esqueça de adicionar os códigos no arquivo `.bashrc`.*
 
 Após instalado ambos, embora o Python já venha instalado em algumas máquinas, iremos instalar outra versão por meio do `pyenv`. Para que evitemos sujar a nossa máquina com instalações indevidas. Por isto, a ideia de ambiente virtual.
+
+#### Poetry (Mac OS)
+
+Para instalar o pyenv no Mac OS, execute:
+
+```bash
+brew update
+brew install pyenv
+```
 
 ### Python
 O comando abaixo apresenta diversas versões do `python` que o `pyenv` nos dá:
